@@ -26,9 +26,6 @@ async function getQuote() {
     quoteText.textContent = `" ${randomQuote.content} "`;
     quoteAuthor.textContent = `${randomQuote.author}`;
 
-    // Change background
-    document.body.style.backgroundImage = `url('https://source.unsplash.com/random/1920x1080?sig=${Math.random()}')`;
-
   } catch (error) {
     quoteText.textContent = "Failed to fetch quote.";
     // console.error(error);
