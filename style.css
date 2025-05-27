@@ -1,35 +1,49 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
 }
 
-html,body{
-    height: 95vh;
-    width: 98vw;
+#quote-container {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  width: 80%;
+  max-width: 600px;
 }
 
-.container{
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#quote-box {
+  margin-bottom: 20px;
 }
 
-.quouteContainer{
-    width: 90%;
-    padding: 20px 40px;
-    margin-top: 30px;
-    font-weight: 700;
-    border-radius: 10px;
+#quote-text {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-ul li {
-    padding: 20px 20px;
-    margin-top: 30px;
-    list-style: none;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+#quote-author {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+#buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#buttons button:hover {
+  background-color: #0056b3;
 }
